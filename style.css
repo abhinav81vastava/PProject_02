@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Rose", cursive;
+  }
+  :root {
+    --primary: #ffc233;
+    --button-background: #ff505f;
+    --button-text: #fffcfc;
+  }
+  .container {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.701), rgba(10, 19, 86, 0.888)),
+      url('./assets/pexels-maxyne-barcel-10402282.png');
+    position: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding: 21px 70px;
+    font-family: "Red Rose";
+  }
+  
+  /* ------------------------------ */
+  /* ---------- NAVBAR ------------ */
+  /* ------------------------------ */
+  nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul.list {
+    list-style: none;
+    display: flex;
+  }
+  li.list-item {
+    color: var(--primary);
+    padding: 0 50px;
+  }
+  .hero-heading {
+    color: var(--primary);
+  }
+  
+  button.button-small {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    padding: 9px 29px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+  }
+  button.button-large {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    padding: 9px 29px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+  }
+  /* ------------------------------ */
+  /* ---------- HERO ------------ */
+  /* ------------------------------ */
+  .bottom {
+    position: sticky;
+    right: 30px;
+    bottom: 0;
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h1.hero-heading {
+    font-size: 90px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 190px;
+  }
+  
+  .bottom {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
+  
+  /* Extra */
+  
+  .button-small:hover, .button-large:hover{
+    background-color: rgb(0, 0, 0);
+    transition:all 3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  li:hover{
+    border-bottom: 2px solid rgb(167, 78, 15);
+    box-shadow: #dd9d27 2px 2px 2px 2px;
+    cursor: pointer;
+    transition:all .500s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .menu-btn{
+    display: none;
+  }
+   
